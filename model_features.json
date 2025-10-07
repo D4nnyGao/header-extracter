@@ -1,0 +1,16 @@
+{
+    "features": [
+        "case_lower",
+        "case_mixed",
+        "case_sentence",
+        "case_title",
+        "case_upper",
+        "font_flag",
+        "has_header_pattern",
+        "has_top_header_word",
+        "is_bold",
+        "noun_count",
+        "relative_length_ratio",
+        "verb_count"
+    ]
+}
