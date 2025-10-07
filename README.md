@@ -1,21 +1,10 @@
-# Clinical Trial Information Extraction Project
-
-This project focuses on extracting structured information from clinical trial documents. It implements and compares two distinct machine learning approaches: a traditional **Random Forest (RF) classifier** and a modern **Large Language Model (LLM)**. The goal is to efficiently identify and extract key data points from raw text data sourced from ClinicalTrials.gov.
-
-The repository includes data processing pipelines, model training scripts, evaluation scripts, and interactive web applications built with Streamlit to demonstrate and test the models.
-
-***
-
-## 🚀 Features
-
-* **Data Pipeline:** A script to preprocess and clean the raw clinical trial data (`ctg-studies.csv`) for machine learning applications.
-* **Random Forest Model:** A classical ML model trained to classify or extract specific features. The repository includes a visualization of the resulting feature importances.
-* **Large Language Model (LLM):** An LLM-based approach for the same information extraction task, complete with a performance evaluation script.
-* **Interactive Demos:** Separate Streamlit applications to demonstrate the live prediction capabilities of both the Random Forest (`rf_app.py`) and LLM (`llm_app.py`) models.
-* **Manual Testing App:** A dedicated Streamlit interface (`test_app.py`) for easy manual testing and validation of outputs.
-
-***
-
-## 📂 File Structure
-
-Here is an overview of the key files in this project:
+├── ctg-studies.csv             # Raw dataset of clinical trial studies
+├── data_pipeline.py            # Script for data cleaning and preprocessing
+├── feature_importances.png     # Output plot of feature importances from the RF model
+├── llm_app.py                  # Streamlit application to interact with the LLM
+├── llm_eval.py                 # Script to evaluate the performance of the LLM
+├── model_features.json         # JSON file containing the features used by the RF model
+├── requirements.txt            # A list of Python packages required to run the project
+├── rf_app.py                   # Streamlit application to interact with the trained RF model
+├── rf_model.py                 # Script to train the Random Forest classifier
+└── test_app.py                 # Streamlit application for general testing and validation
